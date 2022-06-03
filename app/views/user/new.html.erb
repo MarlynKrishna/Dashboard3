@@ -1,0 +1,45 @@
+<%# <h1>User#new</h1>
+<p>Find me in app/views/user/new.html.erb</p> %>
+<%= form_for :user, url: '/users' do |form| %>
+<section class="vh-100" style="background-color: #508bfc;">
+        <div class="container py-2 h-100">
+                <div class="row d-flex justify-content-center align-items-center h-100">
+                        <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                                <div class="card shadow-2-strong" style="border-radius: 1rem;">
+                                        <div class="card-body p-5 text-center">
+
+                                                <h3 class="mb-5">Sign Up</h3>
+                                                <div class="form-outline mb-4">
+                                                        <%= form.label :first_name %>
+                                                        <%= form.text_field :first_name %><br>
+                                                </div>
+                                                <div class="form-outline mb-4">
+                                                        <%= form.label :last_name %>
+                                                        <%= form.text_field :last_name %><br>
+                                                </div>
+                                                <div class="form-outline mb-4">
+                                                        <%= form.label :user_name %>
+                                                        <%= form.text_field :user_name %><br>
+                                                </div>
+                                                <div class="form-outline mb-4">
+
+                                                </div>
+                                                <div class="form-outline mb-4">
+                                                        <%= form.label :email %>
+                                                        <%= form.text_field :email %><br>
+                                                </div>
+                                                <div class="form-outline mb-4">
+                                                        <%= form.label :password %>
+                                                        <%= form.password_field :password %><br>
+                                                </div>
+
+
+                                                <%=  submit_tag("Create Account") %>
+                                        </div>
+
+                                </div>
+                        </div>
+                </div>
+        </div>
+</section>
+<%end %>

@@ -1,0 +1,13 @@
+   <%= form_with scope: :customer, url: customers_path, local: true do |form| %>
+  <%= form.label :name, "Name:" %>
+  <%= form.text_field :name %><br>
+  <%# <%= text_field_with_label form, :name %><br>
+
+  <%= form.label :phone_num, "Phone_num:" %>
+  <%= form.text_field :phone_num %><br>
+
+<%= form.label :state, "State:" %>
+  <%= form.select :state, ["AndhraPradesh", "Telangana", "Tamilnadu","Karnataka"] %><br>
+  <%= form.submit %>
+ <% end %> 
+<a href="/" >Homepage</a>

@@ -1,0 +1,32 @@
+<%# <h1>Products#index</h1>
+<p>Find me in app/views/products/index.html.erb</p>
+<h1>Products#index</h1>
+<p>Find me in app/views/products/index.html.erb</p>
+<!DOCTYPE html>   
+<html>   
+<body>   
+       
+</html>   %>
+<%= form_with scope: :product, url: products_path, local: true do |form| %>
+  <%= form.label :name, "Name:" %>
+  <%= form.text_field :name %><br>
+  <%# <%= text_field_with_label form, :name %><br>
+
+  <%= form.label :price, "Price:" %>
+  <%= form.text_field :price %><br>
+
+<%= form.label :short_description, "Description:" %>
+  <%= form.text_field :short_description %><br>
+ 
+ <%# <div>   
+ <a href="/" >Homepage</a>
+        <%# <%= link_to 'Back', { controller: 'products', action: 'index'} %>   
+        <%# <%= form.submit 'Create Product' %>   
+      <%# </div> %>
+      <div>   
+      <%= link_to 'Back',"/" %>   
+      <%= form.submit 'Create Product' %>   
+    </div>   
+ <% end %> 
+
+ 

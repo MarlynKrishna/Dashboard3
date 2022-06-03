@@ -1,0 +1,30 @@
+<h1>Customers#show</h1>
+<p>Find me in app/views/customers/show.html.erb</p>
+<table class="table table-bordered">
+<thead>
+ <tr>
+ <th> Name </th>
+ <th>Phone_num</th>
+ <th>DOB</th>
+ <th>State</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td><%=@customer.name %></td>
+ <td><%=@customer.phone_num %></td>
+ <td><%=@customer.date_on_buy %></td>
+ <td><%=@customer.state%></td>
+ </tr>
+ </tbody>
+ </table>
+
+
+
+<%# <ul>
+
+<%= link_to "Click here to submit another response" ,new_customer_path%>
+
+
+
+<%# </ul> %>
